@@ -1,0 +1,180 @@
+/*! :root{
+  --preto: rgb(19, 34, 53);
+  --azul-claro: rgb(109, 218, 211);
+  --azul-escuro: rgb(21,57,73);
+} */
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+main{  
+  display: flex;
+  justify-content: center;
+}
+
+.container{
+  width: 1200px;
+}
+
+
+/* Seção Vantagens */
+
+#secao-vantagens{
+  display: flex;
+  justify-content: center;
+  background-color: rgb(21,57,73);
+}
+
+#secao-vantagens .grid-container{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 120px 1fr 130px;
+  column-gap: 20px;
+}
+
+#secao-vantagens .titulo-secao{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  grid-column: 1 / 4;
+  color: rgb(109, 218, 211);
+  font-size: 26px;
+}
+
+#secao-vantagens #card{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+#secao-vantagens #btn-secao{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-column: 2 / 3;
+  margin: 30px 0;
+}
+
+#secao-vantagens #btn-secao button{
+  background-color: rgb(109, 218, 211);
+  color: white;
+  padding: 15px 30px;
+  font-size: 16px;
+  border: 0;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
+  cursor: pointer;
+}
+
+#secao-vantagens #btn-secao button:hover{
+  background-color: rgb(92, 201, 193);
+}
+
+#secao-vantagens #btn-secao button:active{
+  border-top: 2px solid rgba(0,0,0,0.75);
+  border-left: 2px solid rgba(0,0,0,0.75);
+  box-shadow: none;
+}
+
+.card-titulo{
+  color: white;
+  margin-bottom: 20px;
+}
+
+.card-texto{
+  text-align: center;
+  max-width: 80%;
+}
+
+/* Seção Anunciar */
+
+
+
+#secao-anunciar{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  border: 30px solid rgb(109, 218, 211);;
+}
+
+#secao-anunciar .grid-container{
+  display: grid;
+  grid-template-columns: 1fr 500px;
+}
+
+.imagem-secao-anunciar{
+  grid-row: 1 / 4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imagem-secao-anunciar img{
+  width: 100%;
+}
+
+.conteudo-secao-anunciar{
+  background-color: rgb(21,57,73);
+  grid-row: 1 / 4;
+  padding: 0 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.titulo-secao-anunciar{
+  color: white;
+  font-size: 20px;
+  text-align: justify;
+  width: 100%;
+  margin-top: 30px;
+  line-height: 45px;
+  grid-row: 1 / 2;
+}
+
+.texto-secao-anunciar{
+  color: white;
+  font-size: 15px;
+  text-align: justify;
+  width: 100%;
+  margin: 30px 0;
+  line-height: 45px;
+  grid-row: 2 / 3;
+  text-align: center;
+  line-height: 25px;
+}
+
+.btn-secao button{
+  background-color: rgb(109, 218, 211);
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
+  cursor: pointer;  
+  grid-row: 3 / 4;
+  margin-bottom: 20px;
+}
+
+.btn-secao button:hover{
+  background-color: rgb(92, 201, 193);
+}
+
+.btn-secao button:active{
+  border-top: 1px solid rgba(0,0,0,0.75);
+  border-left: 1px solid rgba(0,0,0,0.75);
+  box-shadow: none;
+}
+
+
+/* MEDIA QUERIES */
