@@ -1,0 +1,123 @@
+body,
+ul,
+li,
+p {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  font-size: 1.2rem;
+  font-family: Arial;
+}
+
+body {
+  margin-bottom: 100px;
+  background-color: rgb(10, 10, 10);
+}
+
+a {
+  text-decoration: none;
+  color: rgb(33, 161, 161);
+}
+
+a:hover{
+    background-color: aqua;
+    border-radius: 10px;
+    color: black;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 100px;
+  color:rgb(23, 91, 100);
+}
+
+li{
+    color: aqua;
+}
+
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.header {
+  background: rgb(21,57,73);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.header img{
+    width: 50px;
+}
+
+input[type="text" i] {
+    padding: 1px 2px;
+}
+input {
+    width: 50%;
+    margin-right: 5px;
+}
+
+.menu {
+  display: flex;
+}
+
+.menu li {
+  margin-left: 10px;
+}
+
+.menu li a {
+  display: block;
+  padding: 10px;
+}
+
+
+/* Apartamentos */
+
+.grid1 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  max-width: 800px;
+  padding: 10px;
+  margin: 0 auto;
+  grid-gap: 20px;
+}
+
+.grid1 > div:nth-child(n + 4) {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+  align-items: center;
+}
+
+.grid1 > div.anuncio {
+  grid-column: 1;
+  grid-row: 2 / 5;
+  display: block;
+}
+
+@media (max-width: 600px) {
+  .grid1 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .grid1 > div:nth-child(n + 4) {
+    display: block;
+  }
+  .grid1 > div.anuncio {
+    grid-column: auto;
+    grid-row: auto;
+    order: -1;
+  }
+}
+p{
+    background-color: rgb(31, 100, 97);
+    border-radius: 150px;
+}
+
+
+
+
