@@ -7,17 +7,8 @@
 }
 
 body{
-    height:100vh;
+    width:100%;
 }
-
-/*-------------------------------------------------------------*/
-
-main{
-    height:50vw;
-    background-color: white;
-}
-
-/*--------------------------------------------------------------*/
 
 footer{
     color: rgb(255,255, 255);
@@ -36,6 +27,7 @@ footer{
 /*--------------------------------------------------------------*/
 #rodape{
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
 }
 /*----------------Redes Sociais-----------------------*/
@@ -182,4 +174,122 @@ div .labenu{
 
 /*-----------------------------------------------------------------*/
 
+@media screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    footer{
+        padding: 15px;
+    }
 
+    #logo {
+        text-align: center;
+        padding-top: 18px;
+    }
+
+    #logo img{
+        width: 100px;
+    }
+
+    #rodape{
+        flex-direction: column;
+    }
+
+    #redes h5, #atendimento h5{
+        font-size: 10px;
+        text-align: center;
+        padding-top: 10px;
+    }
+
+    #atendimento h5{
+        padding-bottom: 10px;
+    }
+
+    #icones{
+        justify-content: center;
+        padding-top: 10px;
+    }
+
+    #icones .face{
+        width:22px;
+        height:22px;
+        padding-left: 1vw;
+    }
+    
+    #icones .insta{
+        width:18px;
+        height:18px;
+        padding-left: 1vw;
+    }
+    
+    #icones .link{
+        width:20px;
+        height:20px;
+        padding-left: 1vw;
+    }
+    
+    #icones .tt{
+        width:18px;
+        height:18px;
+        padding-left: 1vw;
+    }
+    
+    #icones .yout{
+        width:30px;
+        height:20px;
+    }
+
+    #atendimento{
+        text-align: center;
+    }
+
+    #atendimento p{
+        font-size: 5px;
+    }
+
+    #contatos{
+        text-align: center;
+        padding: 0;
+    }
+
+    .contatos h5{
+        font-size: 10px;
+        padding-top: 10px;
+    } 
+
+    #labenu{
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding-bottom: 0%;
+    }
+
+    #labenu img{
+        width: 40px;
+        padding-right: 3px;
+    }
+
+    #labenu h5{
+        font-size: 0%;
+    }
+
+    .perfis h5{
+        font-size:10px
+    }
+
+    #desenvolvedores{
+        padding-bottom: 20px;
+    }
+
+    #desenvolvedores img{
+        width:30px;
+        border-radius: 50px;
+    }
+
+    #diretrizes p{
+        font-size: 6.4px;
+    }
+
+
+
+
+    
+
+}
