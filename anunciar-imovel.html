@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>F4Life</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="./f4life.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+  <main>
+
+    <div class="container">
+      
+      <section id="secao-form-anunciar"> 
+        <div class="grid-container">
+
+          <div class="titulo-secao">
+            <h2>Alugue seu imóvel sem burocracias</h2>
+          </div>
+          
+          <form action="">
+            <h3 id="subtitulo-secao">Anuncie Grátis!</h3>
+            <div id="form-btn-top-container">
+              <input type="button" class="btn-form-anunciar btn-form-active" id="btn-form-endereco" value="Endereço">
+              <input type="button" class="btn-form-anunciar" id="btn-form-cep" value="CEP">
+            </div>
+              <label id="label-endereco-cep" for="form-endereco">Endereço</label>
+              <input type="text" id="input-endereco-cep" placeholder="Endereço do imóvel">
+              <label id="label-nome" for="form-nome">Nome</label>
+              <input type="text" id="input-nome" placeholder="Seu nome">
+            <div id="form-contato-container">
+              <div id="form-pais">
+                <label for="input-form-pais">País</label>
+                <input type="text" id="input-form-pais" placeholder="+55">
+              </div>
+              <div id="form-area">
+                <label for="form-area">Área</label>
+                <input type="text" id="input-form-area" placeholder="Área">
+              </div>
+              <div id="form-celular">
+                <label for="form-celular">Celular</label>
+                <input type="text" id="input-form-celular" placeholder="Celular">
+              </div>
+            </div>
+            <div class="btn-secao" id="btn-form-submit">
+              <button>Anunciar imóvel</button>
+            </div>
+          </form>
+
+        </div><!-- grid-container -->
+      </section><!-- secao-form-anunciar -->
+      
+
+      <section id="secao-motivos-anunciar"> 
+        <div class="grid-container">
+
+          <div class="titulo-secao">
+            <h2>Motivos para anunciar na F4Life</h2>
+          </div>
+          
+          <div class="container-motivos">
+
+            <div class="card">
+              <i class="far fa-star"></i>
+              <h2>Online e sem burocracias</h2>
+              <p>Do anúncio até a assinatura do contrato, todo o processo é feito pelo aplicativo ou site.</p>
+            </div>
+
+            <div class="card">
+              <i class="far fa-star"></i>
+              <h2>Aluguel sem atrasos</h2>
+              <p>O dinheiro do aluguel cai na sua conta todo mês.</p>
+            </div>
+
+            <div class="card">
+              <i class="far fa-star"></i>
+              <h2>Alugue ou venda muito mais rápido do que nas imobiliárias tradicionais</h2>
+              <p>Seu imóvel é visto por milhares de pessoas todos os dias.</p>
+            </div>
+
+            <div class="card">
+              <i class="far fa-star"></i>
+              <h2>Fotos profissionais do seu imóvel</h2>
+              <p>Boas fotos são essenciais para atrair as pessoas certas. Contratamos fotógrafos experientes para fazer isso por você.</p>
+            </div>
+
+          </div>
+
+        </div><!-- grid-container -->
+      </section><!-- secao-motivos-anunciar -->
+
+
+      
+      
+      <section id="secao-historias-clientes"> 
+        <div class="grid-container">
+
+          <div class="titulo-secao">
+            <h2>Conheça histórias reais dos nossos clientes</h2>
+          </div>
+
+          <div class="subtitulo-secao">
+            <p>Depoimentos de quem vive a experiência de anunciar um imóvel pela F4Life</p>
+          </div>
+          
+          <div class="container-historias">
+
+            <img src="./imagens/cliente-historia.jpg" alt="foto-cliente">
+            <div class="info-historia">
+              <p id="mensagem-historia">"Foi tudo muito rápido, as fotos foram feitas em uma semana, e na seguinte o contrato já estava assinado."</p>
+              <p id="nome-cliente-historia">Ana Paula</p>
+              <p id="cargo-cliente-historia">Proprietária QuintoAndar</p>
+              <button>Assistir ao depoimento</button>
+            </div>
+
+          </div>
+
+          <div class="bullets">
+            <div class="bullet"></div>
+            <div class="bullet"></div>
+            <div class="bullet"></div>
+            <div class="bullet"></div>
+            <div class="bullet"></div>
+          </div>
+          
+
+        </div><!-- grid-container -->
+      </section><!-- secao-historias-clientes -->
+
+    </div><!-- container -->
+
+  </main>
+
+  <script src="./scripts.js"></script>
+  
+</body>
+</html>
