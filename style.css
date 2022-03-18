@@ -353,8 +353,8 @@ main{
   margin: 20px;
 }
 
-#secao-historias-clientes .grid-container{
-}
+/* #secao-historias-clientes .grid-container{
+} */
 
 #secao-historias-clientes .titulo-secao{
   display: flex;
