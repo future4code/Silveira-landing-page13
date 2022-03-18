@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@100;400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins';
+}
+
+body{
+    height:100vh;
+}
+
+/*-------------------------------------------------------------*/
+
+main{
+    height:50vw;
+    background-color: white;
+}
+
+/*--------------------------------------------------------------*/
+
+footer{
+    color: rgb(255,255, 255);
+    background-color: rgb(19, 34, 53);
+    padding: 3vw 3vw 0vw 3vw;
+    height: 1fr;
+}
+
+/*--------------------------------------------------------------*/
+
+#logo img{
+    width: 10vw;
+    padding-bottom: 1.5vw;
+}
+
+/*--------------------------------------------------------------*/
+#rodape{
+    display: flex;
+    justify-content: space-between;
+}
+/*----------------Redes Sociais-----------------------*/
+
+#redes h5{
+    font-size: 1.8vw;
+}
+
+#icones{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#icones img{
+    padding: 1vw 1vw 1vw 0vw;
+}
+
+#icones img:hover{
+    cursor: pointer;
+}
+
+#icones .face{
+    width: 3.5vw;
+}
+
+#icones .insta{
+    width: 2.7vw;
+    height: 2.7vw;
+}
+
+#icones .link{
+    width:3vw;
+    height: 3vw;
+}
+
+#icones .tt{
+    width: 2.7vw;
+}
+
+#icones .yout{
+    width: 4vw;
+}
+
+/*---------------------------------------*/
+
+#atendimento h5{
+    padding-bottom: 1vw;
+    font-size: 1.8vw;
+}
+
+#atendimento .disponivel{
+    font-size: 1vw;
+    padding-bottom: 0.5vw;
+}
+
+#atendimento a{
+    font-size: 1vw;
+    color:rgb(109, 218, 211);
+}
+
+#atendimento .links{
+    padding-top: 2vw;
+}
+#atendimento a:hover{
+    color:white;
+}
+
+/*---------------------------------------*/
+#contatos{
+    padding: 0vw 7vw 4vw 0vw;
+}
+
+.contatos h5{
+    font-size: 1.8vw;
+}
+
+.perfis{
+    text-align: center;
+}
+.perfis h5{
+    font-size: 1.3vw;
+}
+
+.logo h5{
+    font-size: 1.22vw;
+}
+
+#labenu{
+    display: flex;
+    align-items: center;
+    padding-top: 1vw;
+    padding-bottom: 3vw;
+}
+
+div .labenu{
+    width:3vw;
+}
+
+#labenu h5{
+    padding-left: 1vw;
+}
+
+#desenvolvedores{
+    display: flex;
+    justify-content:center;
+    padding-top: 1vw;
+}
+
+#desenvolvedores img{
+    width:3vw;
+    border-radius: 3vw;
+    padding: 0.8vw;
+}
+
+/*---------------------------------------------------------------*/
+#diretrizes{
+    border: 0.1vw rgb(109, 218, 211) solid ;
+    border-left: none;
+    border-right: none;
+    font-size: 1vw;
+    padding-top: 0.5vw;
+    padding-bottom: 0.5vw;
+    text-align: center;
+}
+
+/*-----------------------------------------------------------------*/
+#fim{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.9vw;
+    padding: 0.8vw 0vw 0.8vw 0vw;
+}
+
+#seguro{
+    display: flex;
+    align-items: center;
+}
+
+#seguro img{
+    width: 1.5vw;
+}
+
+/*-----------------------------------------------------------------*/
+
+
