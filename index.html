@@ -7,6 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="./f4life.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
   <body>
 
@@ -15,63 +16,95 @@
   
       <nav>
         <ul class="menu">
-          <li><a href="/">Buscar Imóveis</a></li>
-          <li><a href="./anunciar-imovel.html">Anunciar Imóveis</a></li>
-          <li><a href="/">Nossa Empresa</a></li>
-          <li><a href="/">Atendimento</a></li>
+          <li><a href="/"><i class="fa-solid fa-magnifying-glass-location"></i> Buscar Imóveis</a></li>
+          <li><a href="./anunciar-imovel.html"><i class="fa-solid fa-bullhorn"></i> Anunciar Imóveis</a></li>
+          <li><a href="/"><i class="fas fa-headset"></i> Atendimento</a></li>
         </ul>
       </nav>
     </header>
 
     <div class="logo">
-    <img src="./imagens/f4rlife2.png" >
+    <img src="./imagens/logo-fundo-branco.png" >
   </div>
     
   <section class="grid1">
       <div>
         <img src="./imagens/destaque1.webp">
-        <li>Apartamento</li>
+        <a href="#"><p>Apartamentos</p></a>
       </div>
       <div>
         <img src="./imagens/destaque2.webp">
-        <li>Apartamento</li>
+        <a href="#"><p>Lofts</p></a>
       </div>
       <div>
-        <img src="./imagens/destaque5.webp">
-        <li>Studio e kitnet</li>
+        <img src="./imagens/destaque5.webp">        
+        <a href="#"><p>Studios e kitnets</p></a>
       </div>
       <div>
         <img src="./imagens/n3.webp">
-        <p>Apartamento</p>
+        <a href=""><p>São Paulo</p></a>
       </div>
       <div>
         <img src="./imagens/n2.webp">
-        <p>Apartamento</p>
+        <a href=""><p>Rio de Janeiro</p></a>
       </div>
       <div>
         <img src="./imagens/casa.webp">
-        <p>Casa</p>
+        <a href=""><p>Minas Gerais</p></a>
       </div>
       <div>
         <img src="./imagens/nv1.webp">
-        <p>Apartamento</p>
+        <a href=""><p>Rio Grande do Sul</p></a>
       </div>
       <div>
         <img src="./imagens/destaque3.webp">
-        <p>Apartamento</p>
+        <a href=""><p>Santa Catarina</p></a>
       </div>
       <div>
         <img src="./imagens/destaque6.webp">
-        <p>Apartamento</p>
+        <a href=""><p>Bahia</p></a>
       </div>
-      <div class="anuncio">
-        <img src="./imagens/f4life.png">
-      </div>
+      
     </section>
 
     <main>
 
     <div class="container">
+      
+      <section id="secao-sobre-empresa"> 
+        <div class="grid-container">
+
+          <div class="titulo-secao">
+            <h2>Sobre nós</h2>
+          </div>
+
+          <div class="container-motivos">
+
+            <div class="card">
+              <i class="far fa-star"></i>
+              <p id="texto-sobre">Somos uma empresa de aluguéis de moradias compartilhadas e kitnets para pessoas universitárias.</p>
+            </div>
+
+            <div class="card">
+              <i class="far fa-star"></i>
+              <p id="texto-sobre">Realizamos reformas e preparamos moradias para recepção de pessoas universitárias em um ambiente específico e otimizado para a vida de graduação.</p>
+            </div>
+
+            <div class="card">
+              <i class="far fa-star"></i>
+              <p id="texto-sobre">Temos diversas opções de imóveis compartilhados e também individuais para atender aos mais diversos tipos de pessoa.</p>
+            </div>
+
+            <div class="card">
+              <i class="far fa-star"></i>
+              <p id="texto-sobre">Oferecemos um suporte diferenciado durante todo o período de hospedagem.</p>
+            </div>
+
+          </div>          
+
+        </div><!-- grid-container -->
+      </section><!-- secao-sobre-empresa -->
+      
       
       <section id="secao-vantagens"> 
         <div class="grid-container">
@@ -87,7 +120,7 @@
               <h2>Segurança</h2>
             </div>
             <div class="card-texto">
-              <p>Você pode assinar o contrato de aluguel da sua casa, totalmente digital, sem contato físico com ninguém.</p>
+              <p>Você pode assinar o contrato de aluguel, totalmente digital, sem contato físico com ninguém.</p>
             </div>
           </div>
 
@@ -99,7 +132,7 @@
               <h2>Pagamento Facilitado</h2>
             </div>
             <div class="card-texto">
-              <p>Nós intermediamos o pagamento e asseguramos que todos cumpram as suas obrigações de contrato sem que ocorra algum transtorno.</p>
+              <p>Nós intermediamos o pagamento e oferecemos diversas opções para maior comodidade.</p>
             </div>
           </div>
 
@@ -111,7 +144,7 @@
               <h2>Garantia</h2>
             </div>
             <div class="card-texto">
-              <p>As chaves só serão entregues para você após avaliarmos as condições da moradia previamente para evitar quaisquer incomodos.</p>
+              <p>Garantimos que as chaves só serão entregues para você após avaliarmos as condições da moradia e atestarmos a qualidade.</p>
             </div>
           </div>
 
@@ -131,7 +164,7 @@
 
           <div class="conteudo-secao-anunciar">
             <div class="titulo-secao-anunciar">
-              <h2>Anuncie grátis para mais de 30 mil pessoas todos os dias</h2>
+              <h2>Anuncie grátis para mais de 30 mil universitários todos os dias</h2>
             </div>
 
               <div class="texto-secao-anunciar">              
