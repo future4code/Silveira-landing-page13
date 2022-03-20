@@ -376,6 +376,47 @@ div .labenu{
 /*-----------------------------------------------------------------*/
 
 @media screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    
+    .header, .menu{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    body,ul,li{
+        list-style: none;
+        
+    }
+      
+    .header img{
+        width:30px;
+        margin-bottom: 10px;
+    }
+
+    .menu a {
+        background-color: rgb(109, 218, 211);
+        border-radius: 10px;
+        font-size: 15px;
+        margin-top: 2px;
+      }
+    
+    /*-----------------------------------------------------------------*/
+
+    .input-maior input{
+        width: 300px;
+    }
+    
+    .input-menor input{
+        width: 150px;
+    }
+
+
+    main{
+        grid-template-columns: 1fr;
+    } 
+    /*-----------------------------------------------------------------*/
+
     footer{
         padding: 15px;
         width: 100vw;

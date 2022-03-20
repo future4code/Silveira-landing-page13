@@ -421,11 +421,6 @@ body, ul, li{
   font-family: Arial;
 }
 
-body {
-  margin-bottom: 100px;
-  background-color: rgb(252, 250, 250);
-}
-
 .menu a{
   text-decoration: none;
   color: rgb(33, 161, 161);
