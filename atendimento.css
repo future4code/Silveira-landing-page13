@@ -33,7 +33,7 @@ body {
 }
 
 .menu a:hover{
-    background-color: aqua;
+    background-color: rgb(33, 161, 161);
     border-radius: 10px;
     color: black;
 }
@@ -65,7 +65,7 @@ li{
 }
 
 .header img{
-    width: 50px;
+    width: 35px;
 }
 
 .menu {
@@ -78,15 +78,21 @@ li{
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
-  margin-left: 10px;
+  margin: 0 12px;
+  font-size: 16px;
 }
 
 .menu li a {
   display: flex;
-  align-items: flex-start;
   justify-content: flex-start;
+  align-items: center;
   display: flex;
   padding: 10px;
+}
+
+.menu li a i{
+  margin-right: 5px;
+  font-size: 16px;
 }
 
 /*----------------------FIM HEADER-------------------------*/
@@ -116,7 +122,11 @@ li{
 main{
     display: flex;
     justify-content: space-evenly;
-    margin: 20px;
+}
+
+#caixa-duvidas,
+#borda-duvida{  
+  margin: 20px;
 }
 
 #caixa-duvidas, #borda-duvida{
@@ -144,7 +154,7 @@ main{
 
 #container-contatos{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 
 #container-plataformas{
@@ -174,10 +184,11 @@ main{
     margin: 10px;
     font-size: 50px;
     align-items: center;
+    justify-content: space-between;
 }
 
 #container-icones i{
-    margin-bottom: 10px;
+    margin-top: 10px;
 }
 
 /*-----------------------------------------------*/
@@ -195,6 +206,7 @@ main{
 #mande-duvida input{
     width: 330px;
     border: 1px solid rgb(109, 218, 211) ;
+    padding-left: 8px;
 }
 
 .assunto{
@@ -204,8 +216,38 @@ main{
 
 .mensagem{
     height: 200px;
+    resize: none;
+    width: 330px;
+    border: 1px solid rgb(109, 218, 211) ;
+    padding: 8px;
 }
 
+#btn-atendimento{
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+#btn-atendimento button{
+  background-color: rgb(109, 218, 211);
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
+  cursor: pointer;
+}
+
+#btn-atendimento button:hover{
+  background-color: rgb(92, 201, 193);
+}
+
+#btn-atendimento button:active{
+  border-top: 2px solid rgba(0,0,0,0.75);
+  border-left: 2px solid rgba(0,0,0,0.75);
+  box-shadow: none;
+}
 
 
 
@@ -392,10 +434,13 @@ div .labenu{
     }
 
     .menu a {
-        background-color: rgb(109, 218, 211);
         border-radius: 10px;
         font-size: 15px;
         margin-top: 2px;
+    }
+
+    .mensagem{
+      width: 100%;
     }
 
     /*-----------------------------------------------------------------*/
@@ -449,40 +494,6 @@ div .labenu{
 
     #atendimento h5{
         padding-bottom: 10px;
-    }
-
-    #icones{
-        justify-content: center;
-        padding-top: 10px;
-    }
-
-    #icones .face{
-        width:22px;
-        height:22px;
-        padding-left: 1vw;
-    }
-    
-    #icones .insta{
-        width:18px;
-        height:18px;
-        padding-left: 1vw;
-    }
-    
-    #icones .link{
-        width:20px;
-        height:20px;
-        padding-left: 1vw;
-    }
-    
-    #icones .tt{
-        width:18px;
-        height:18px;
-        padding-left: 1vw;
-    }
-    
-    #icones .yout{
-        width:23px;
-        
     }
 
     #atendimento{

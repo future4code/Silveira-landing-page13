@@ -65,7 +65,7 @@ li{
 }
 
 .header img{
-    width: 50px;
+    width: 35px;
 }
 
 .menu {
@@ -78,17 +78,24 @@ li{
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
-  margin-left: 10px;
+  margin: 0 12px;
+  font-size: 16px;
 }
 
 .menu li a {
   display: flex;
-  align-items: flex-start;
   justify-content: flex-start;
+  align-items: center;
   display: flex;
   padding: 10px;
 }
-/*----------------------FIM HEADER----------------------------*/
+
+.menu li a i{
+  margin-right: 5px;
+  font-size: 16px;
+}
+
+/*----------------------FIM HEADER-------------------------*/
 
 /*----------------------INICIO NAV----------------------------*/
 
@@ -104,6 +111,7 @@ li{
     outline-color: rgb(19, 34, 53);
     border: 1px solid rgb(109, 218, 211);  
     font-size: 15px;
+    padding-left: 8px;
 }
 
 .input-maior input{
@@ -112,25 +120,6 @@ li{
 
 .input-menor input{
     width: 200px;
-}
-
-#busca button{
-    width: 150px;
-    height: 40px;
-    margin: 20px;
-    border-radius: 5px;
-    background-color: rgb(19, 34, 53);
-    color: white;
-    border:none;
-}
-
-#busca button:hover{
-    cursor: pointer;
-    background-color: rgb(48, 84, 131);
-}
-
-#busca button:active{
-    background-color: rgb(19, 34, 53);
 }
 
 .aluguel-quartos{
@@ -148,7 +137,59 @@ li{
 }
 
 #busca button{
-    margin-bottom: 50px;
+    margin: 30px 0 50px 0;
+}
+
+
+#btn-atendimento{
+  display: flex;
+  justify-content: center;
+}
+
+#btn-atendimento button{
+  background-color: rgb(109, 218, 211);
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
+  cursor: pointer;
+}
+
+#btn-atendimento button:hover{
+  background-color: rgb(92, 201, 193);
+}
+
+#btn-atendimento button:active{
+  border-top: 2px solid rgba(0,0,0,0.75);
+  border-left: 2px solid rgba(0,0,0,0.75);
+  box-shadow: none;
+}
+#btn-atendimento{
+  display: flex;
+  justify-content: center;
+}
+
+#btn-atendimento button{
+  background-color: rgb(109, 218, 211);
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
+  cursor: pointer;
+}
+
+#btn-atendimento button:hover{
+  background-color: rgb(92, 201, 193);
+}
+
+#btn-atendimento button:active{
+  border-top: 2px solid rgba(0,0,0,0.75);
+  border-left: 2px solid rgba(0,0,0,0.75);
+  box-shadow: none;
 }
 /*----------------------FIM NAV----------------------------*/
 
@@ -395,7 +436,6 @@ div .labenu{
     }
 
     .menu a {
-        background-color: rgb(109, 218, 211);
         border-radius: 10px;
         font-size: 15px;
         margin-top: 2px;
