@@ -4,17 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>F4Life</title>
     <link rel="stylesheet" href="atendimento.css">
+    <link rel="shortcut icon" href="./f4life.ico" type="image/x-icon">
 </head>
 <body>
     <header class="header">
-        <img src="./Imagens/loog.jpg" >
+      <a href="./index.html"><img src="./imagens/logo-azul-fundo-header.png" ></a>
         <nav>
           <ul class="menu">
-            <li><a href="./buscar-imovel.html">Buscar Imóveis</a></li>
-            <li><a href="./anunciar-imovel.html">Anunciar Imóveis</a></li>
-            <li><a href="./atendimento.html">Atendimento</a></li>
+          <li><a href="./buscar-imovel.html"><i class="fa-solid fa-magnifying-glass-location"></i> Buscar Imóveis</a></li>
+          <li><a href="./anunciar-imovel.html"><i class="fa-solid fa-bullhorn"></i> Anunciar Imóveis</a></li>
+          <li><a href="./atendimento.html"><i class="fas fa-headset"></i> Atendimento</a></li>
           </ul>
         </nav>
     </header>
@@ -64,7 +65,11 @@
                 <p>Assunto:</p>
                 <input class="assunto" type="text" placeholder="Assunto">
                 <p>Mensagem:</p>
-                <input class="mensagem" type="text" placeholder="Mensagem">
+                <textarea class="mensagem" type="text" placeholder="Mensagem" rows="10"></textarea>
+                
+                <div id="btn-atendimento">
+                  <button>Enviar</button>
+                </div>
             </div>
         </div>
     </main>
@@ -78,11 +83,11 @@
             <div id="redes">
                 <h5>Redes sociais</h5>
                 <div id="icones">
-                   <a href="https://www.facebook.com/" target="_blank"><img class="face" src="./imagens/logo-facebook.png" alt="face"></a> 
-                   <a href="https://www.instagram.com/" target="_blank"><img class="insta" src="./imagens/logo-instagram.png" alt="insta"></a> 
-                   <a href="https://www.linkedin.com/" target="_blank"><img  class="link" src="./imagens/logo-linkedin.png" alt="linkedin"></a> 
-                   <a href="https://www.twitter.com/" target="_blank"><img class="tt" src="./imagens/logo-twitter.png" alt="tt"></a> 
-                   <a href="https://www.youtube.com/" target="_blank"><img class="yout" src="./imagens/logo-youtube.png" alt="yout"></a> 
+                   <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f icone" style="color: rgb(109, 218, 211); font-size: 30px; margin: 10px;"></i></a> 
+                   <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram icone" style="color: rgb(109, 218, 211); font-size: 30px; margin: 10px;"></i></a> 
+                   <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin-in icone" style="color: rgb(109, 218, 211); font-size: 30px; margin: 10px;"></i></a> 
+                   <a href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter icone" style="color: rgb(109, 218, 211); font-size: 30px; margin: 10px;"></i></a> 
+                   <a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube icone" style="color: rgb(109, 218, 211); font-size: 30px; margin: 10px;"></i></a> 
                 </div>
             </div>
             <div id="atendimento">
