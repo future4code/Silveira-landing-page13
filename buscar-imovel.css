@@ -1,0 +1,536 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}    
+
+/*-------------INICIO HEADER---------------------*/
+
+.header {
+    background: rgb(21,57,73);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+body,ul,li{
+  list-style: none;
+  font-size: 1.2rem;
+}
+
+body {
+  background-color: rgb(252, 250, 250);
+  display: flex;
+  flex-direction: column;
+}
+
+.menu a {
+  text-decoration: none;
+  color: rgb(33, 161, 161);
+}
+
+.menu a:hover{
+    background-color: aqua;
+    border-radius: 10px;
+    color: black;
+}
+
+li{
+  color:rgb(41, 124, 124);
+}
+
+
+.header img {
+  max-width: 100%;
+  display: block;
+}
+
+.logo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+}
+
+.header {
+  background: rgb(21,57,73);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.header img{
+    width: 50px;
+}
+
+.menu {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.menu li {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-left: 10px;
+}
+
+.menu li a {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  display: flex;
+  padding: 10px;
+}
+/*----------------------FIM HEADER----------------------------*/
+
+/*----------------------INICIO NAV----------------------------*/
+
+#busca{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+}
+#busca input{
+    height: 50px;
+    border-radius: 5px;
+    outline-color: rgb(19, 34, 53);
+    border: 1px solid rgb(109, 218, 211);  
+    font-size: 15px;
+}
+
+.input-maior input{
+    width: 400px;
+}
+
+.input-menor input{
+    width: 200px;
+}
+
+#busca button{
+    width: 150px;
+    height: 40px;
+    margin: 20px;
+    border-radius: 5px;
+    background-color: rgb(19, 34, 53);
+    color: white;
+    border:none;
+}
+
+#busca button:hover{
+    cursor: pointer;
+    background-color: rgb(48, 84, 131);
+}
+
+#busca button:active{
+    background-color: rgb(19, 34, 53);
+}
+
+.aluguel-quartos{
+    display: flex;
+    justify-content: center;
+    margin-left: 0;
+}
+
+.buscar-cidade, .buscar-bairro, .aluguel-quartos{
+    margin: 5px;
+}
+
+.buscar-cidade{
+    margin-top: 50px;
+}
+
+#busca button{
+    margin-bottom: 50px;
+}
+/*----------------------FIM NAV----------------------------*/
+
+/*----------------------FIM MAIN----------------------------*/
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    row-gap: 1.8vw;
+    column-gap: 1.8%;
+    margin: 1.8%;
+    flex-grow: 1;
+    margin-top: 0%;
+}
+
+#medias{
+    display: flex;
+    flex-direction: column;
+    border: rgb(109, 218, 211) 2px solid;
+}
+
+#medias:hover{
+    border: 2px rgb(21,57,73) solid;
+    cursor: pointer;
+}
+
+#medias img{
+    width: 100%;
+}
+
+#medias button{
+    border-color: transparent;
+}
+
+#medias button:hover{
+    cursor:pointer;
+}
+
+#descricao-card{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+}
+
+#descricao-card .tipo-de-imovel{
+    padding-bottom: 12px;
+    font-size: 14px;
+}
+
+#descricao-card .especificacoes{
+    padding-top: 5px;
+    padding-bottom: 6px;
+    font-size: 14px;
+}
+
+#descricao-card .total{
+    color: rgb(21,57,73);
+    font-size: 18px;
+}
+
+#descricao-card h2, #descricao-card h3{
+    font-size: 20px;
+}
+
+/*----------------------MAIN HEADER----------------------------*/
+
+/*----------------------INICIO FOOTER-------------------------*/
+
+footer{
+    color: rgb(255,255, 255);
+    background-color: rgb(19, 34, 53);
+    padding: 3vw 3vw 0vw 3vw;
+    height: 1fr;
+}
+
+/*--------------------------------------------------------------*/
+
+#logo img{
+    width: 10vw;
+    padding-bottom: 1.5vw;
+}
+
+/*--------------------------------------------------------------*/
+#rodape{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+/*----------------Redes Sociais-----------------------*/
+
+#redes h5{
+    font-size: 1.8vw;
+}
+
+#icones{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#icones img{
+    padding: 1vw 1vw 1vw 0vw;
+}
+
+#icones img:hover{
+    cursor: pointer;
+}
+
+#icones .face{
+    width: 56px;
+}
+
+#icones .insta{
+    width: 48px;
+}
+
+#icones .link{
+    width:50px;
+}
+
+#icones .tt{
+    width: 47px;
+}
+
+#icones .yout{
+    width: 65px;
+}
+
+/*---------------------------------------*/
+
+#atendimento h5{
+    padding-bottom: 1vw;
+    font-size: 1.8vw;
+}
+
+#atendimento .disponivel{
+    font-size: 1vw;
+    padding-bottom: 0.5vw;
+}
+
+#atendimento a{
+    font-size: 1vw;
+    color:rgb(109, 218, 211);
+}
+
+#atendimento .links{
+    padding-top: 2vw;
+}
+#atendimento a:hover{
+    color:white;
+}
+
+/*---------------------------------------*/
+#contatos{
+    padding: 0vw 7vw 4vw 0vw;
+}
+
+.contatos h5{
+    font-size: 1.8vw;
+}
+
+.perfis{
+    text-align: center;
+}
+.perfis h5{
+    font-size: 1.3vw;
+}
+
+#labenu{
+    display: flex;
+    align-items: center;
+    padding-top: 1vw;
+    padding-bottom: 3vw;
+}
+
+div .labenu{
+    width:3vw;
+}
+
+#labenu h5{
+    padding-left: 1vw;
+    font-size: 1.22vw;
+}
+
+#desenvolvedores{
+    display: flex;
+    justify-content:center;
+    padding-top: 1vw;
+}
+
+#desenvolvedores img{
+    width:70px;
+    border-radius: 3vw;
+    padding: 0.8vw;
+}
+
+/*---------------------------------------------------------------*/
+#diretrizes{
+    border: 0.1vw rgb(109, 218, 211) solid ;
+    border-left: none;
+    border-right: none;
+    font-size: 1vw;
+    padding-top: 0.5vw;
+    padding-bottom: 0.5vw;
+    text-align: center;
+}
+
+/*-----------------------------------------------------------------*/
+#fim{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.9vw;
+    padding: 0.8vw 0vw 0.8vw 0vw;
+}
+
+#seguro{
+    display: flex;
+    align-items: center;
+}
+
+#seguro img{
+    width: 1.5vw;
+}
+
+/*-----------------------------------------------------------------*/
+
+@media screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    
+    .header, .menu{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    body,ul,li{
+        list-style: none;
+        
+    }
+      
+    .header img{
+        width:30px;
+        margin-bottom: 10px;
+    }
+
+    .menu a {
+        background-color: rgb(109, 218, 211);
+        border-radius: 10px;
+        font-size: 15px;
+        margin-top: 2px;
+      }
+    
+    /*-----------------------------------------------------------------*/
+
+    .input-maior input{
+        width: 300px;
+    }
+    
+    .input-menor input{
+        width: 150px;
+    }
+
+
+    main{
+        grid-template-columns: 1fr;
+    } 
+    /*-----------------------------------------------------------------*/
+
+    footer{
+        padding: 15px;
+        width: 100vw;
+    }
+
+    #logo {
+        text-align: center;
+        padding-top: 18px;
+    }
+
+    #logo img{
+        width: 100px;
+    }
+
+    #rodape{
+        flex-direction: column;
+    }
+
+    #redes h5, #atendimento h5{
+        font-size: 10px;
+        text-align: center;
+        padding-top: 10px;
+    }
+
+    #atendimento h5{
+        padding-bottom: 10px;
+    }
+
+    #icones{
+        justify-content: center;
+        padding-top: 10px;
+    }
+
+    #icones .face{
+        width:22px;
+        height:22px;
+        padding-left: 1vw;
+    }
+    
+    #icones .insta{
+        width:18px;
+        height:18px;
+        padding-left: 1vw;
+    }
+    
+    #icones .link{
+        width:20px;
+        height:20px;
+        padding-left: 1vw;
+    }
+    
+    #icones .tt{
+        width:18px;
+        height:18px;
+        padding-left: 1vw;
+    }
+    
+    #icones .yout{
+        width:30px;
+        height:20px;
+    }
+
+    #atendimento{
+        text-align: center;
+    }
+
+    #atendimento p{
+        font-size: 5px;
+    }
+
+    #contatos{
+        text-align: center;
+        padding: 0;
+    }
+
+    .contatos h5{
+        font-size: 10px;
+        padding-top: 10px;
+    } 
+
+    #labenu{
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding-bottom: 0%;
+    }
+
+    #labenu img{
+        width: 40px;
+        padding-right: 3px;
+    }
+
+    #labenu h5{
+        font-size: 0%;
+    }
+
+    .perfis h5{
+        font-size:10px
+    }
+
+    #desenvolvedores{
+        padding-bottom: 20px;
+    }
+
+    #desenvolvedores img{
+        width:30px;
+        border-radius: 50px;
+    }
+
+    #diretrizes p{
+        font-size: 6.4px;
+    }
+
+
+}
+
+/*----------------------FIM FOOTER-----------------------------*/

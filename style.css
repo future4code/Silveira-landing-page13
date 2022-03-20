@@ -500,12 +500,24 @@ body {
   background-color: rgb(252, 250, 250);
 }
 
-header a {
+body, ul, li{
+  list-style: none;
+  font-size: 1.2rem;
+  font-family: Arial;
+}
+
+#containers-grid1 p{
+  list-style: none;
+  font-size: 1.2rem;
+  font-family: Arial;
+}
+
+.menu a{
   text-decoration: none;
   color: rgb(33, 161, 161);
 }
 
-header a:hover{
+.menu a:hover{
     background-color: aqua;
     border-radius: 10px;
     color: black;
@@ -550,6 +562,7 @@ img {
 input[type="text" i] {
     padding: 1px 2px;
 }
+
 input {
     width: 50%;
     margin-right: 5px;
@@ -608,9 +621,30 @@ input {
   display: block;
 }
 
+  
 .grid1 a{
   text-decoration: none;
   color: rgb(21,57,73);
+  
+@media (max-width: 600px) {
+  .grid1 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .grid1 > div:nth-child(n + 4) {
+    display: block;
+  }
+  .grid1 > div.anuncio {
+    grid-column: auto;
+    grid-row: auto;
+    order: -1;
+  }
+  p{
+  color:rgb(41, 124, 124);  
+  border-radius: 150px;
+    display:flex;
+    align-items: center;
+    justify-items: flex-start;  
+  }
 }
 
 .grid1 a:hover{
@@ -622,10 +656,6 @@ input {
     margin: 0;
     padding: 0;
     font-family: 'Poppins';
-}
-
-body{
-    width:100%;
 }
 
 footer{
