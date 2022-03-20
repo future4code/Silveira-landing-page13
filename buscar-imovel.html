@@ -10,7 +10,6 @@
 <body>
     <header class="header">
         <img src="./Imagens/loog.jpg" >
-    
         <nav>
           <ul class="menu">
             <li><a href="/">Buscar Imóveis</a></li>
@@ -21,10 +20,34 @@
         </nav>
     </header>
 
-    <nav>
-        <input type="text" placeholder="Buscar Imóveis"> 
-        <button>Filtrar</button>
-        <button>Ordenar por:</button>
+    <nav id="busca">
+        <div class="buscar-cidade">
+            <p>Cidade</p>
+            <div class="input-maior">
+                <input type="text" placeholder="Busque por cidade">
+            </div>
+        </div>
+        <div class="buscar-bairro">
+            <p>Bairro</p>
+            <div class="input-maior">
+                <input type="text" placeholder="Busque por bairro">
+            </div>
+        </div>
+        <div class="aluguel-quartos">
+            <div>
+                <p>Aluguel até</p>
+                <div class="input-menor">
+                    <input type="text" placeholder="Escolha o valor">
+                </div>
+            </div>
+            <div>
+                <p>Quartos</p>
+                <div class="input-menor">
+                    <input type="text" placeholder="N° de quartos">
+                </div>
+            </div>
+        </div>
+        <button>Buscar Imóveis</button>
     </nav>
 
     <main>
