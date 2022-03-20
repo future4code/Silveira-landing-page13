@@ -17,17 +17,53 @@ main{
 }
 
 .container{
-  width: 1200px;
+    width: 100%;
 }
 
 /***********************/
 /* Arquivo Index.html */
+/* Seção Sobre a Empresa */
+
+#secao-sobre-empresa{
+  display: flex;
+  justify-content: center;
+  background-color: rgb(21,57,73);
+  padding: 40px 0 50px 0;
+}
+
+#secao-sobre-empresa .titulo-secao{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: rgb(109, 218, 211);
+  font-size: 26px;
+}
+
+#secao-sobre-empresa .texto-secao{
+  text-align: justify;
+  color: white;
+  font-size: 20px;
+  padding: 0 100px;
+  margin-top: 30px;
+}
+
+.container-motivos #texto-sobre{
+  text-align: justify;
+}
+
+#secao-sobre-empresa .card{
+  margin: 40px 0;
+}
+
+
 /* Seção Vantagens */
 
 #secao-vantagens{
   display: flex;
   justify-content: center;
-  background-color: rgb(21,57,73);
+  background-color: white;
 }
 
 #secao-vantagens .grid-container{
@@ -53,7 +89,7 @@ main{
   justify-content: center;
   align-items: center;
   text-align: center;
-  color: white;
+  color: rgb(21,57,73);
 }
 
 #secao-vantagens #btn-secao{
@@ -86,7 +122,7 @@ main{
 }
 
 .card-titulo{
-  color: white;
+  color: rgb(109, 218, 211);
   margin-bottom: 20px;
 }
 
@@ -101,7 +137,7 @@ main{
   display: flex;
   width: 100%;
   justify-content: space-between;
-  border: 30px solid rgb(109, 218, 211);;
+  border: 30px solid rgb(109, 218, 211);
 }
 
 #secao-anunciar .grid-container{
@@ -244,12 +280,10 @@ main{
 #form-area{
   margin-right: 7.5px;
   margin-left: 7.5px;
-
 }
 
 #form-celular{
   margin-left: 7.5px;
-
 }
 
 #form-btn-top-container{
@@ -347,55 +381,97 @@ main{
 
 /* Seção Historias-clientes */
 
-#secao-historias-clientes{
+#secao-historias{
   display: flex;
+  width: 100%;
   justify-content: center;
-  margin: 20px;
+  padding: 30px;
 }
 
-#secao-historias-clientes .grid-container{
+#secao-historias .grid-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
-#secao-historias-clientes .titulo-secao{
-  display: flex;
-  justify-content: center;
-  align-items: center;
+#secao-historias .titulo-secao{
+  grid-column: 1 / 3;
   text-align: center;
   color: rgb(109, 218, 211);
   font-size: 26px;
+  margin-bottom: 15px;
+}
+
+#secao-historias .subtitulo-secao{
   grid-column: 1 / 3;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 35px;
+  font-weight: bold;
 }
 
-#secao-historias-clientes .subtitulo-secao{
-  text-align: center;
-  font-size: 16px;
-  margin-top: 10px;
-  grid-column: 1 / 3;
-}
-
-.container-historias{
-  display: grid;
-  grid-template-columns: 40% 1fr;
-}
-
-.container-historias p{
-  margin-top: 10px;
-  text-align: center;
-  grid-column: 2 / 3;
-}
-
-.container-historias img{
-  width: 100%;
+.cliente-secao{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   grid-column: 1 / 2;
+  max-width: 350px;
+  margin-right: 20px;
 }
 
+.cliente-secao img{
+  width: 220px;
+  border-radius: 50px;
+}
 
-/* TESTE */
+#nome-cliente-historia{
+  font-weight: bold;
+  font-size: 18px;
+  margin-top: 15px;
+  margin-bottom: 7px;
+}
+
+#cargo-cliente-historia{
+  font-style: italic;
+  font-size: 15px;
+
+}
+
+#secao-historias .historia-secao{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0 30px;
+  max-width: 350px;
+  margin-left: 20px;
+}
+
+#secao-historias .historia-secao #mensagem-historia{
+  margin: 50px 0;
+  text-align: justify;
+  font-weight: 300;
+}
+
+#secao-historias .container-historia .btn-secao{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.container-historia{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  grid-column: 1 / 3;
+}
 
 .bullets{
   display: flex;
   justify-content: center;
   align-items: center;
+  grid-column: 1 / 3;
 }
 
 .bullet{
@@ -405,9 +481,24 @@ main{
   border-radius: 50%;
   margin: 30px 5px 10px 5px;
   cursor: pointer;
+  box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75); 
 }
 
+.bullet:hover{
+  background-color: rgb(109, 218, 211);  
+}
+
+.bullet:active{
+  box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+} 
+
+
 /* FIM MATHEUS */
+
+
+body {
+  background-color: rgb(252, 250, 250);
+}
 
 body, ul, li{
   list-style: none;
@@ -465,7 +556,7 @@ img {
 }
 
 .header img{
-    width: 50px;
+    width: 35px;
 }
 
 input[type="text" i] {
@@ -487,17 +578,23 @@ input {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
-  margin-left: 10px;
+  margin: 0 12px;
+  font-size: 16px;
 }
 
 .menu li a {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
+  align-items: center;
   display: flex;
   padding: 10px;
 }
 
+.menu li a i{
+  margin-right: 5px;
+  font-size: 16px;
+}
 
 /* Apartamentos */
 
@@ -506,8 +603,9 @@ input {
   grid-template-columns: repeat(3, 1fr);
   max-width: 800px;
   padding: 10px;
-  margin: 0 auto;
+  margin: 20px auto 50px auto;
   grid-gap: 20px;
+  text-align: center;
 }
 
 .grid1 > div:nth-child(n + 4) {
@@ -523,6 +621,11 @@ input {
   display: block;
 }
 
+  
+.grid1 a{
+  text-decoration: none;
+  color: rgb(21,57,73);
+  
 @media (max-width: 600px) {
   .grid1 {
     grid-template-columns: repeat(2, 1fr);
@@ -544,93 +647,10 @@ input {
   }
 }
 
-
-
-/* MEDIA QUERIES */
-
-@media screen and (min-device-width : 320px) and (max-device-width : 480px) {
-/* celulares */
-
-  .container{
-    width: 100%;
-  }
-
-  #secao-anunciar .grid-container{
-    display: grid;
-    grid-template-columns: 1fr;
-  }
-
-  #secao-vantagens .grid-container{
-    display: flex;
-    flex-direction: column;
-  }
-
-  #secao-vantagens .titulo-secao{
-    font-size: 24px;
-    margin-top: 20px;
-  }
-  
-  #secao-vantagens .card-texto{
-    text-align: justify;
-  }
-  
-  #secao-vantagens #card{
-    margin: 20px 0;
-  }
-
-  #secao-vantagens #card:nth-child(4){
-    margin-top: 20px;
-  }
-
-  #secao-vantagens #btn-secao{
-    margin-bottom: 40px;
-  }
-  
-
+.grid1 a:hover{
+  font-weight: 500;
 }
 
-@media screen and (min-device-width : 481px) and (max-device-width : 800px) {
-/* tablets */
-
-  .container{
-    width: 100%;
-  }
-
-  #secao-anunciar .grid-container{
-    display: grid;
-    grid-template-columns: 1fr;
-  }
-
-  #secao-vantagens .grid-container{
-    display: flex;
-    flex-direction: column;
-  }
-
-  #secao-vantagens .titulo-secao{
-    font-size: 20px;
-    padding: 0 100px;
-    margin: 50px 0 20px 0;
-    width: 100%;
-  }
-  
-  #secao-vantagens .card-texto{
-    text-align: justify;
-  }
-  
-  #secao-vantagens #card{
-    margin: 20px 0;
-  }
-
-  #secao-vantagens #card:nth-child(4){
-    margin-top: 20px;
-  }
-
-  #secao-vantagens #btn-secao{
-    margin-bottom: 40px;
-  }
-
-
-}
 
 *{
     margin: 0;
@@ -642,7 +662,6 @@ footer{
     color: rgb(255,255, 255);
     background-color: rgb(19, 34, 53);
     padding: 3vw 3vw 0vw 3vw;
-    height: 1fr;
 }
 
 /*--------------------------------------------------------------*/
@@ -915,5 +934,254 @@ div .labenu{
         font-size: 6.4px;
     }
 
+
+}
+
+
+@media (max-width: 600px) {
+  .grid1 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .grid1 > div:nth-child(n + 4) {
+    display: block;
+  }
+  .grid1 > div.anuncio {
+    grid-column: auto;
+    grid-row: auto;
+    order: -1;
+  }
+}
+
+
+
+/* MEDIA QUERIES */
+
+@media screen and (min-device-width : 320px) and (max-device-width : 480px) {
+/* celulares */
+
+  .container{
+    width: 100%;
+  }
+
+  #secao-anunciar .grid-container{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  #secao-vantagens .grid-container{
+    display: flex;
+    flex-direction: column;
+  }
+
+  #secao-vantagens .titulo-secao{
+    font-size: 24px;
+    margin-top: 20px;
+  }
+  
+  #secao-vantagens .card-texto{
+    text-align: justify;
+  }
+  
+  #secao-vantagens #card{
+    margin: 20px 0;
+  }
+
+  #secao-vantagens #card:nth-child(4){
+    margin-top: 20px;
+  }
+
+  #secao-vantagens #btn-secao{
+    margin-bottom: 40px;
+  }
+
+  #secao-form-anunciar .titulo-secao,
+  #secao-motivos-anunciar .titulo-secao,
+  #secao-historias .titulo-secao{
+    font-size: 18px; 
+  }
+
+  #secao-motivos-anunciar .titulo-secao{
+    padding: 0 30px;
+  }
+
+
+  #secao-form-anunciar form input[type='text']{
+    width: 100%;
+  }
+
+  #form-contato-container{
+    display: block;
+    margin: 0;
+  }
+
+  #form-pais{
+    margin-right: 0;
+  }
+
+  #form-area{
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  #form-celular{
+    margin-left: 0;
+  }
+
+  .card{
+    margin: 50px 0;
+  }
+
+  .card h2{
+    font-size: 20px;
+  }
+
+  .card p{
+    margin-top: 10px;
+  }
+  
+
+  #secao-historias .grid-container{
+    grid-template-columns: 1fr;
+  }
+
+  #secao-historias .titulo-secao{
+    margin-top: 20px;
+  }
+
+  #secao-historias .titulo-secao,
+  #secao-historias .subtitulo-secao{
+    grid-column: 1 /-1;
+    text-align: center;
+  }
+  
+  .container-historia{
+    flex-direction: column;
+    grid-column: 1 / 2;
+  }
+
+  #secao-historias{
+    padding: 0;
+  }
+
+  #secao-historias .cliente-secao{
+    margin-right: 0;
+  }
+
+  #secao-historias .historia-secao{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 350px;
+    margin-top: 30px;
+    margin-left: 0;
+  }
+  
+  #secao-historias .historia-secao #mensagem-historia{
+    margin: 0 0 50px 0;
+  }
+
+  .bullets{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+}
+
+@media screen and (min-device-width : 481px) and (max-device-width : 800px) {
+/* tablets */
+
+  .container{
+    width: 100%;
+  }
+
+  #secao-anunciar .grid-container{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  #secao-vantagens .grid-container{
+    display: flex;
+    flex-direction: column;
+  }
+
+  #secao-form-anunciar .titulo-secao,
+  #secao-motivos-anunciar .titulo-secao,
+  #secao-historias .titulo-secao{
+    padding: 0 100px;
+  }
+
+  #secao-vantagens .titulo-secao{
+    font-size: 20px;
+    padding: 0 100px;
+    margin: 50px 0 20px 0;
+    width: 100%;
+  }
+  
+  #secao-vantagens .card-texto{
+    text-align: justify;
+  }
+  
+  #secao-vantagens #card{
+    margin: 20px 0;
+  }
+
+  #secao-vantagens #card:nth-child(4){
+    margin-top: 20px;
+  }
+
+  #secao-vantagens #btn-secao{
+    margin-bottom: 40px;
+  }
+
+  #secao-historias .grid-container{
+    grid-template-columns: 1fr;
+  }
+
+  #secao-historias .titulo-secao{
+    margin-top: 20px;
+  }
+
+  #secao-historias .titulo-secao,
+  #secao-historias .subtitulo-secao{
+    grid-column: 1 /-1;
+    text-align: center;
+  }
+
+  #secao-historias .subtitulo-secao{
+    padding: 0 30px;
+  }
+  
+  .container-historia{
+    flex-direction: column;
+    grid-column: 1 / 2;
+  }
+
+  #secao-historias{
+    padding: 0;
+  }
+
+  #secao-historias .historia-secao{
+    margin-top: 30px;
+  }
+
+  #secao-historias .historia-secao{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 350px;
+  }
+
+  .bullets{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 15px;
+}
 
 }
